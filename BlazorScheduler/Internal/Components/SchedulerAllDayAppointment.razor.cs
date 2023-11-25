@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using BlazorScheduler.Components;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using System;
 using System.Collections.Generic;
 
 namespace BlazorScheduler.Internal.Components
 {
-	public partial class SchedulerAllDayAppointment
+    public partial class SchedulerAllDayAppointment
     {
         [CascadingParameter] public Scheduler Scheduler { get; set; } = null!;
 
@@ -15,7 +16,7 @@ namespace BlazorScheduler.Internal.Components
         [Parameter] public int Order { get; set; }
 
         private IEnumerable<string> Classes
-		{
+        {
             get
             {
                 if (ReferenceEquals(Appointment, Scheduler.DraggingAppointment))

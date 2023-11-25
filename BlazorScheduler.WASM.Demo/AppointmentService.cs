@@ -1,9 +1,9 @@
-﻿using DemoApp.Models;
+﻿using BlazorScheduler.WASM.Demo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DemoApp
+namespace BlazorScheduler.WASM.Demo
 {
     public class AppointmentService
     {

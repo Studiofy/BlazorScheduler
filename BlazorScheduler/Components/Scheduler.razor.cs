@@ -1,14 +1,14 @@
-﻿using BlazorScheduler.Internal.Components;
-using BlazorScheduler.Internal.Extensions;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using BlazorScheduler.Internal.Components;
+using BlazorScheduler.Internal.Extensions;
 
-namespace BlazorScheduler
+namespace BlazorScheduler.Components
 {
     public partial class Scheduler : IAsyncDisposable
     {
@@ -36,7 +36,8 @@ namespace BlazorScheduler
         [Parameter] public string NewAppointmentText { get; set; } = "New Appointment";
         #endregion
 
-        public DateTime CurrentDate { get; private set; }
+        [Parameter] public DateTime CurrentDate { get; set; } = DateTime.Now;
+
         public (DateTime Start, DateTime End) CurrentRange
         {
             get

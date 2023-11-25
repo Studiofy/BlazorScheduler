@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace BlazorScheduler.Internal.Extensions
 {
-	internal static class Extensions
-	{
+    internal static class Extensions
+    {
         public static DateTime RoundUp(this DateTime dt, TimeSpan d)
         {
             return new DateTime((dt.Ticks + d.Ticks - 1) / d.Ticks * d.Ticks, dt.Kind);
@@ -49,8 +49,8 @@ namespace BlazorScheduler.Internal.Extensions
         }
 
         public static string AsString(this IEnumerable<string> enumerable)
-		{
+        {
             return string.Join(" ", enumerable);
-		}
+        }
     }
 }

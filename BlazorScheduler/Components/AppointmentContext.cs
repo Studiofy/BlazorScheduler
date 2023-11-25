@@ -1,4 +1,4 @@
-﻿namespace BlazorScheduler
+﻿namespace BlazorScheduler.Components
 {
     public class AppointmentContext
     {

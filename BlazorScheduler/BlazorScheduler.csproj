@@ -1,24 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-	<Nullable>enable</Nullable>
-	  
-    <Authors>John Valincius</Authors>
-    <Company>Valincius</Company>
-    <Description>Scheduler component library for Blazor.</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Authors>John Valincius; Terence Carrera</Authors>
+    <Company>Valincius; Studiofy</Company>
+    <Description>Scheduler component library for Blazor. Based on valincius/BlazorScheduler repository</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl>https://github.com/valincius/BlazorScheduler</RepositoryUrl>
-    <Version>4.3.3</Version>
+    <PackageProjectUrl>
+    </PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Studiofy/BlazorScheduler</RepositoryUrl>
+    <Version>8.0.0</Version>
+    <RootNamespace>BlazorScheduler</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
-
 </Project>

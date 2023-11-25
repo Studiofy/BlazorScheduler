@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DemoApp.Models
+namespace BlazorScheduler.WASM.Demo.Models
 {
     public class AppointmentDto
     {

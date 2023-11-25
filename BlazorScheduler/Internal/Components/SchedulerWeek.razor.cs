@@ -1,12 +1,14 @@
-﻿using BlazorScheduler.Internal.Extensions;
+﻿using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BlazorScheduler.Components;
+using BlazorScheduler.Internal.Extensions;
 
 namespace BlazorScheduler.Internal.Components
 {
-	public partial class SchedulerWeek
+    public partial class SchedulerWeek
     {
         [CascadingParameter] public Scheduler Scheduler { get; set; } = null!;
 
@@ -14,13 +16,13 @@ namespace BlazorScheduler.Internal.Components
         [Parameter] public DateTime End { get; set; }
         [Parameter] public IEnumerable<Appointment> Appointments { get; set; } = null!;
 
-		private int MaxNumOfAppointmentsPerDay => Scheduler.MaxVisibleAppointmentsPerDay;
+        private int MaxNumOfAppointmentsPerDay => Scheduler.MaxVisibleAppointmentsPerDay;
         private int MaxVisibleAppointmentsThisWeek
         {
             get
             {
                 int max = 0;
-                for(var dt = Start; dt <= End; dt = dt.AddDays(1))
+                for (var dt = Start; dt <= End; dt = dt.AddDays(1))
                 {
                     var appCount = Appointments.Where(x => dt.Between(x.Start.Date, x.End.Date)).Count();
                     max = Math.Max(max, appCount);

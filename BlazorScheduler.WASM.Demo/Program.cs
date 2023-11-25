@@ -2,11 +2,10 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using MudBlazor.Services;
 using System;
-using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace DemoApp
+namespace BlazorScheduler.WASM.Demo
 {
     public class Program
 	{

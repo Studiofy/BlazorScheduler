@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using System;
 using System.Threading.Tasks;
 
-namespace BlazorScheduler
+namespace BlazorScheduler.Components
 {
     public partial class Appointment : ComponentBase, IDisposable
     {
