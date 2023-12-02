@@ -1,9 +1,9 @@
-﻿using BlazorScheduler.Components;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Studiofy.BlazorScheduler.Components;
 using System.Collections.Generic;
 
-namespace BlazorScheduler.Internal.Components
+namespace Studiofy.BlazorScheduler.Internal.Components
 {
     public partial class SchedulerAppointment
     {

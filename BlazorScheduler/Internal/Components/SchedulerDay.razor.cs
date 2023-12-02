@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
+using Studiofy.BlazorScheduler.Components;
 using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Components.Web;
 using System.Threading.Tasks;
-using BlazorScheduler.Components;
 
-namespace BlazorScheduler.Internal.Components
+namespace Studiofy.BlazorScheduler.Internal.Components
 {
     public partial class SchedulerDay
     {

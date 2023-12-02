@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using Studiofy.BlazorScheduler.Internal.Components;
+using Studiofy.BlazorScheduler.Internal.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using BlazorScheduler.Internal.Components;
-using BlazorScheduler.Internal.Extensions;
 
-namespace BlazorScheduler.Components
+namespace Studiofy.BlazorScheduler.Components
 {
     public partial class Scheduler : IAsyncDisposable
     {

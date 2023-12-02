@@ -2,15 +2,18 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <Authors>John Valincius; Terence Carrera</Authors>
-    <Company>Valincius; Studiofy</Company>
-    <Description>Scheduler component library for Blazor. Based on valincius/BlazorScheduler repository</Description>
+    <Authors>Terence Carrera</Authors>
+    <Company>Studiofy</Company>
+    <Description>Scheduler component library for Blazor.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>
     </PackageProjectUrl>
     <RepositoryUrl>https://github.com/Studiofy/BlazorScheduler</RepositoryUrl>
     <Version>8.0.0</Version>
-    <RootNamespace>BlazorScheduler</RootNamespace>
+    <RootNamespace>Studiofy.BlazorScheduler</RootNamespace>
+    <PackageId>Studiofy.BlazorScheduler</PackageId>
+    <Title>Studiofy.BlazorScheduler</Title>
+    <Product>Studiofy.BlazorScheduler</Product>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="browser" />

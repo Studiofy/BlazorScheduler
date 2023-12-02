@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BlazorScheduler.Internal.Extensions
+namespace Studiofy.BlazorScheduler.Internal.Extensions
 {
     internal static class Extensions
     {

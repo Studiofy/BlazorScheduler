@@ -1,4 +1,4 @@
-﻿@namespace BlazorScheduler.Internal.Components
+﻿@namespace Studiofy.BlazorScheduler.Internal.Components
 
 <div class="appointment" style="--start: @Start; --end: @Start; --order: @Order; @Style" @onclick="e => Task.FromResult(Scheduler.OnOverflowAppointmentClick?.Invoke(Day))">
     @Scheduler.PlusOthersText.Replace("{n}", AppointmentCount.ToString())

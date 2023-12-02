@@ -1,4 +1,4 @@
-﻿namespace BlazorScheduler.Components
+﻿namespace Studiofy.BlazorScheduler.Components
 {
     public class AppointmentContext
     {

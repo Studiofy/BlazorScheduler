@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
+using Studiofy.BlazorScheduler.Components;
+using Studiofy.BlazorScheduler.Internal.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using BlazorScheduler.Components;
-using BlazorScheduler.Internal.Extensions;
 
-namespace BlazorScheduler.Internal.Components
+namespace Studiofy.BlazorScheduler.Internal.Components
 {
     public partial class SchedulerWeek
     {
